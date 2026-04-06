@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Megabyte Punch Atlas</title>
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="map-page" data-map-id="subprogramdeadlands1">
+<div class="site-chrome"></div>
+<main class="map-layout">
+    <header class="shell-panel page-topbar">
+        <a class="back-link" href="../megabyte-punch.html">Back</a>
+        <h1 class="map-title" id="mapTitle"></h1>
+    </header>
+    <section class="map-shell">
+        <div class="map-note" id="mapNote"></div>
+        <div class="map-viewport" id="mapViewport">
+            <div class="zoom-stack">
+                <button type="button" class="zoom-button" id="zoomOutButton">-</button>
+                <button type="button" class="zoom-button" id="zoomInButton">+</button>
+                <button type="button" class="zoom-button" id="fitButton">Fit</button>
+            </div>
+            <div class="coords-readout" id="coordsReadout">X: 0 Y: 0</div>
+            <div class="map-canvas" id="mapCanvas">
+                <img class="map-image" id="mapImage" alt="">
+                <div class="marker-layer" id="markerLayer"></div>
+            </div>
+        </div>
+    </section>
+    <aside class="map-sidebar">
+        <section class="shell-panel legend-panel">
+            <div class="panel-heading">
+                <h2>Legend</h2>
+            </div>
+            <div id="legendContent"></div>
+        </section>
+    </aside>
+</main>
+<script type="module" src="../js/map-engine.js"></script>
+</body>
+</html>
+
